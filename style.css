@@ -12,18 +12,16 @@ body {
     text-align: center;
     display: flex; 
     flex-wrap: wrap; 
-    justify-content: center;
     gap: 10px;
 }
 
 .nav-bar a { 
     color: white; 
     margin: 0 10px; 
-    text-decoration: none;
 }
 
 .nav-bar a:hover { 
-    color: lightgreen; 
+    color: darkgreen; 
 }
 
 .page-header { 
@@ -41,7 +39,6 @@ body {
 
 .content { 
     padding: 20px; 
-    width: 90%;
     max-width: 1200px;
     margin: auto;
 }
