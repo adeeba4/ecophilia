@@ -4,61 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecophilia - Your Cart</title>
-    <link rel="stylesheet" href="shops_style.css">
+    <link rel="stylesheet" href="shops style.css"> 
 </head>
 <body>
-
     <header class="page-header">
         <h1>Your Cart</h1>
     </header>
 
     <nav class="nav-bar">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="activity_tracker.html">Activity Tracker</a>
+        <a href="index.html">Home&nbsp;&nbsp;</a>
+        <a href="about.html">About Us&nbsp;&nbsp;</a>
+        <a href="activity_tracker.html">Activity Tracker&nbsp;&nbsp;</a>
         <a href="gallery.html">Gallery</a>
-        <a href="carbonFootprintCalculator.html">Calculator</a>
+        <a href="carbonFootprintCalculator.html">Carbon Footprint Calculator&nbsp;&nbsp;</a>
         <a href="products1.html">Products</a>
-        <a href="tips_and_resources.html">Resources</a>
-        <a href="contact.html">Contact</a>
+        <a href="tips_and_resources.html">Tips and Resources&nbsp;&nbsp;</a>
+        <a href="contact.html">Contact Us&nbsp;</a>
     </nav>
 
     <main class="content">
         <form class="order-form">
-            <label for="name">Full Name:</label>
-            <input type="text" id="name">
+            <p class="form-item">
+                <label for="name">Full Name:</label>
+                <input type="text" name="name" id="name">
+            </p>
+            <p class="form-item">
+                <label for="address">Address:</label>
+                <input type="text" name="address" id="address">
+            </p>
+            
+            <h2>Select Your Products</h2>
+            <p class="form-item">
+                <input type="checkbox" name="item1" id="item1">
+                <label for="item1">
+                    <img src="file:///C:/Users/alishba/Downloads/soap.jpg" alt="Handmade natural soap" width="100"> Handmade Natural Soap - $12.99
+                </label>
+            </p>
+            <p class="form-item">
+                <input type="checkbox" name="item2" id="item2">
+                <label for="item2">
+                    <img src="file:///C:/Users/alishba/Downloads/spoons.jpg" alt="Set of wooden utensils" width="100"> Wooden Utensil Set - $29.99
+                </label>
+            </p>
+            <p class="form-item">
+                <input type="checkbox" name="item3" id="item3">
+                <label for="item3">
+                    <img src="file:///C:/Users/alishba/Downloads/bees.jpg" alt="Beeswax food wraps" width="100"> Beeswax Food Wraps - $19.99
+                </label>
+            </p>
+            <p class="form-item">
+                <input type="checkbox" name="item4" id="item4">
+                <label for="item4">
+                    <img src="file:///C:/Users/alishba/Downloads/jars.jpg" alt="Glass storage jars" width="100"> Glass Storage Jars - $39.99
+                </label>
+            </p>
 
-            <label for="address">Address:</label>
-            <input type="text" id="address">
-
-            <h2>Products</h2>
-            <label><input type="checkbox" id="item1"> Handmade Soap - $12.99</label>
-            <label><input type="checkbox" id="item2"> Wooden Utensils - $29.99</label>
-            <label><input type="checkbox" id="item3"> Beeswax Wraps - $19.99</label>
-            <label><input type="checkbox" id="item4"> Glass Jars - $39.99</label>
-
-            <h2>Choose Color</h2>
-            <select multiple>
+            <h2>Choose Product Color</h2>
+            <select name="color" size="7" multiple>
                 <option value="red">Red</option>
+                <option value="orange">Orange</option>
+                <option value="yellow">Yellow</option>
                 <option value="green">Green</option>
                 <option value="blue">Blue</option>
+                <option value="purple">Purple</option>
+                <option value="white">White</option>
+                <option value="black">Black</option>
             </select>
 
-            <input type="submit" value="Submit Order">
+            <p>
+                <input type="submit" value="Submit Order" class="submit-btn">
+            </p>
         </form>
     </main>
 
     <footer class="footer">
-        <p>&copy; 2025 Ecophilia</p>
+        <p>&copy; 2025 Ecophilia. All rights reserved.</p>
     </footer>
-
 </body>
 </html>
-
-
-   
-
-
-
-
-
