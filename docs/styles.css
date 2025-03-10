@@ -1,0 +1,81 @@
+body {
+    font-family: Helvetica, Sans-Serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+a{
+  color: darkgreen;
+}
+h1{
+    text-align: center;
+    color: darkgreen;
+    font-weight: bold;
+}
+h3 {
+    color: darkgreen;
+    font-weight: 600;
+}
+h2, h3{
+    color: darkgreen;
+}
+p {
+    font-weight: 300;
+    text-align: left;
+    margin: 0;
+}
+input {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid darkgreen;
+}
+input[type="submit"]{
+    color: darkgreen;
+    background-color: white;
+    border: 1px solid;
+    border-radius: 4px;
+}
+datalist {
+  color: darkgreen;
+}
+section {
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+a:hover {
+  color: lightgreen;
+} 
+#upload {
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+img {
+    margin: 5px;
+    position: relative;
+}
+img[alt="ecophilia logo"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+form {
+    margin: 10px;
+    padding: 10px;
+    background-color: #738665;
+    border-radius: 10px;
+    width: 500 px;
+  }
+  form > p{
+    background-color: white;
+    border-radius: 3px;
+    width: 350px;
+    margin: 5px;
+    padding: 5px;
+  }
+           
