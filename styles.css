@@ -78,4 +78,15 @@ form {
     margin: 5px;
     padding: 5px;
   }
+
+@media (max-width: 768px) { 
+    .nav-bar { 
+        flex-direction: column; 
+    } 
+
+    .form-item label { 
+        flex-direction: column; 
+    } 
+
+
            
