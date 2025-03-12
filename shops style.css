@@ -53,6 +53,10 @@ body {
     color: darkgreen; 
     margin-bottom: 15px; 
 }
+select { 
+    width: 100%; 
+    padding: 8px; 
+}
 
 
 .form-item label { 
