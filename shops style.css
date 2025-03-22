@@ -1,75 +1,234 @@
-* { 
-    margin: 0; 
-    padding: 0; 
-    box-sizing: border-box; 
+body {
+    font-family: Helvetica, Sans-Serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
 }
-
-body { 
-    font-family: Helvetica, sans-serif; 
-    background: white; 
-    color: darkgreen; 
+a{
+  color: #738665;
 }
+h1{
+    text-align: center;
+    color: #738665;
+    font-weight: bold;
+}
+h3 {
+    color: #738665;
+    font-weight: 600;
+}
+h2, h3{
+    color: #738665;
+}
+p {
+    font-weight: 300;
+    text-align: left;
+    margin: 0;
+}
+datalist {
+  color: #738665;
+}
+section {
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+a:hover {
+  color: lightgreen;
+} 
+#upload {
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+img {
+    margin: 5px;
+    position: relative;
+}
+img[alt="ecophilia logo"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+form {
+    margin: 10px;
+    padding: 10px;
+    background-color: #738665;
+    border-radius: 10px;
+    width: 500 px;
+  }
+  form > p{
+    background-color: white;
+    border-radius: 3px;
+    width: 350px;
+    margin: 5px;
+    padding: 5px;
+  }
 
-.nav-bar { 
-    background: darkgreen; 
-    display: flex; 
-    justify-content: center; 
+.nav-bar {
+    background: #738665; 
     padding: 10px; 
+    text-align: center;
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 10px;
 }
 
 .nav-bar a { 
     color: white; 
-    text-decoration: none; 
+    margin: 0 10px; 
 }
 
 .nav-bar a:hover { 
-    color: lightgreen; 
+    color: #738665; 
 }
 
 .page-header { 
-    background: darkgreen; 
+    background: white; 
     color: white; 
-    text-align: center; 
     padding: 20px; 
+    text-align: center; 
 }
 
 .page-header h1 { 
+    margin: 0; 
     font-size: 2em; 
-    font-weight: bold; 
+    font-weight: bold;
 }
 
 .content { 
     padding: 20px; 
-    max-width: 1200px; 
+    max-width: 1200px;
+    margin: auto;
 }
 
-.order-form { 
+section { 
     background: white; 
     padding: 20px; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 20px; 
+    border-radius: 10px;
 }
 
-.order-form h2 { 
-    color: darkgreen; 
-    margin-bottom: 15px; 
-}
-select { 
-    width: 100%; 
-    padding: 8px; 
-    border: 1px solid darkgreen; 
-    border-radius: 4px; 
+#tips-section ul, #resources-section ul, #faqs-section ul { 
+    padding-left: 20px; 
 }
 
-.form-item label { 
-    display: flex; 
-    align-items: center; 
+#tips-section ul li, #resources-section ul li, #faqs-section ul li { 
+    margin-bottom: 10px; 
 }
 
-.form-item img { 
-    border-radius: 8px; 
+.footer { 
+    background: #738665; 
+    color: white; 
+    text-align: center; 
+    padding: 10px; 
 }
 
 
+nav, footer {
+    background:black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: #ecf0f1;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #738665;
+}
+
+header {
+    background:  #738665;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+
+select {
+    width: 50%; 
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+
+#navbar {
+    background: #738665;
+    padding: 10px;
+    text-align: center;
+    font: green;
+
+}
+
+
+#navbar a:hover {
+    color: green;
+    font: white;
+}
+
+#header {
+    background: #738665;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#header h1 {
+    color: white; 
+    font-weight: bold;
+    font-size: 2.5em; 
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.section {
+    background: white;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.section h2 {
+    color: #738665;
+    margin-bottom: 15px;
+}
+
+.section p {
+    font-weight: 300;
+    text-align: left;
+}
+
+
+.product-grid img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+
+button {
+    background: white;
+    color: #738665;
+    border: 1px solid #738665;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background: lightgreen;
+    color: white;
+}
 
 .submit-btn { 
     background: darkgreen; 
@@ -80,9 +239,52 @@ select {
 
 
 
-@media (max-width: 768px) { 
-    .nav-bar { 
-        flex-direction: column; 
-    } 
+/* Make form take most of the page width */
+.order-form {
+    width: 80%; /* Use 90% of the page width */
+    max-width: 950px; /* Keep it structured on larger screens */
+    margin: auto; /* Center it */
+    padding: 20px;
+    background-color: white;
+}
 
+.form-item label img {
+    width: 200px; 
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+.form-item label { 
+    align-items: center; 
+    white-space: nowrap; 
+    display :flex;
+
+
+}
+
+
+.form-item input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+}
+
+.submit-btn {
+    font-size: 1.5em;
+    background: darkgreen;
+    color: white;
+    border-radius: 5px;
+    width: 100%; 
+}
+
+.submit-btn:hover {
+    background: lightgreen;
+    color: darkgreen;
+}
+
+@media (max-width: 768px) {
+    .order-form {
+        width: 95%; /
+    }
+    
 }
