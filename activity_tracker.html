@@ -1,7 +1,13 @@
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
         <title>Eco-friendly Activity Tracker</title>
+        
+    </head>
+
+    <body>
         <nav>
             <a href="index.html">Home</a>&nbsp;
             <a href="about.html">About Us</a>&nbsp;
@@ -13,44 +19,47 @@
             <a href="shops cart.html">Cart</a>&nbsp;
             <a href="contact.html">Contact Us</a>
         </nav>
-    </head>
+        <div class="container">
+            <div class="form-container">
+                <h1>Eco-friendly Activity Tracker</h1>
+                <h4>Which eco-friendly habits have you completed today?</h4>
+                <form>
+                    <p>
+                        <label for="walk">Walked to work 🚶</label>
+                        <input type="checkbox" name="walk" id="walk">
+                    </p>
+                    <p>
+                        <label for="bags">Used reusable bags 🛍</label>
+                        <input type="checkbox" name="bags" id="bags">
+                    </p>
+                    <p>
+                        <label for="recycle">Recycled properly ♻️</label>
+                        <input type="checkbox" name="recycle" id="recycle">
+                    </p>
+                    <p>
+                        <label for="turnOff">Turned off appliances when not in use 📴</label>
+                        <input type="checkbox" name="turnOff" id="turnOff">
+                    </p>
+                    <p>
+                        <label for="shower">Took a shorter shower than usual 🚿</label>
+                        <input type="checkbox" name="shower" id="shower">
+                    </p>
+                    <p>
+                        <label for="plant">Planted a tree 🌳</label>
+                        <input type="checkbox" name="tree" id="tree">
+                    </p>
+                    <p>
+                        <label for="transport">Took public transport or carpooled 🚌</label>
+                        <input type="checkbox" name="transport" id="transport">
+                    </p>
+                    <button type="button" id="submit">Submit</button>
+                </form>
+            </div>
+            <div id="tableContainer" class="table-container">
+            </div>
+        </div>
 
-    <body>
-        <section>
-        <h1>Eco-friendly Activity Tracker</h1>
-        <h4>Which eco-friendly habits have you completed today?</h4>
-        <form action="activity_tracker.html" method="post">
-            <p>
-               <label for="walk">Walked to work 🚶</label>
-               <input type="checkbox" name="walk" id="walk">
-            </p>
-            <p>
-               <label for="bags">Used reusable bags 🛍</label>
-               <input type="checkbox" name="bags" id="bags">
-            </p>
-            <p>
-               <label for="recycle">Recycled properly ♻️</label>
-               <input type="checkbox" name="recycle" id="recycle">
-            </p>
-            <p>
-                <label for="turnOff">Turned off appliances when not in use 📴</label>
-                <input type="checkbox" name="turnOff" id="turnOff">
-            </p>
-            <p>
-                <label for="shower">Took a shorter shower than usual 🚿</label>
-                <input type="checkbox" name="shower" id="shower">
-            </p>
-            <p>
-                <label for="plant">Planted a tree 🌳</label>
-                <input type="checkbox" name="tree" id="tree">
-            </p>
-            <p>
-                <label for="transport">Took public transport or carpooled 🚌</label>
-                <input type="checkbox" name="transport" id="transport">
-            </p>
-            <input type="submit">
-          </form>
-        </section>
+        <script src="tracker.js"></script>
     </body>
 
 </html>
