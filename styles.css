@@ -4,6 +4,36 @@ body {
     padding: 0;
     background-color: #f0f0f0;
 }
+.nav-bar {
+    background: #394c39; 
+    padding: 10px; 
+    text-align: center;
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 10px;
+}
+
+.nav-bar a { 
+    color: white; 
+    margin: 0 10px; 
+}
+
+.nav-bar a:hover { 
+    color: gray; 
+}
+
+.page-header { 
+    background: #394c39; 
+    color: white; 
+    padding: 20px; 
+    text-align: center; 
+}
+
+.page-header > h1 { 
+    margin: 0; 
+    font-size: 2em; 
+    font-weight: bold;
+}
 
 a {
     color: darkgreen;
@@ -13,14 +43,10 @@ a:hover {
     color: lightgreen;
 }
 
-h1 {
-    text-align: center;
-    color: darkgreen;
-    font-weight: bold;
-}
+
 
 h3, h2 {
-    color: darkgreen;
+    color: #394c39;
     font-weight: 600;
 }
 
@@ -34,18 +60,22 @@ input {
     margin: 5px;
     padding: 5px;
     border-radius: 5px;
-    border: 1px solid darkgreen;
+    border: 1px solid #394c39;
 }
 
 input[type="submit"] {
-    color: darkgreen;
+    color: #394c39;
     background-color: white;
     border: 1px solid;
     border-radius: 4px;
 }
+.contact-form {
+    margin: 10px;
+    padding: 10px;
+}
 
 datalist {
-    color: darkgreen;
+    color: #394c39;
 }
 
 section, div {
@@ -75,7 +105,7 @@ img[alt="ecophilia logo"] {
 }
 
 
-form {
+.activity-form {
     margin: 10px;
     padding: 10px;
     background-color: #738665;
@@ -84,7 +114,7 @@ form {
     max-width: 500px;
 }
 
-form > p {
+.activity-form > p {
     background-color: white;
     border-radius: 4px;
     width: 350px;

@@ -32,7 +32,7 @@ if (submit) {
     submit.addEventListener("click", function(event) {
         event.preventDefault(); // Prevent default form submission
         
-        var activity = document.createElement("h2");
+        let activity = document.createElement("h2");
         activity.innerHTML = "Your eco-friendly activites of the day:";
         document.getElementById("tableContainer").appendChild(activity);
         // Create the table
