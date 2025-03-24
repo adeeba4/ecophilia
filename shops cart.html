@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecophilia - Your Cart</title>
-    <link rel="stylesheet" href="shops style.css"> 
+    <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
     <header class="page-header">
@@ -11,19 +12,18 @@
     </header>
 
     <nav class="nav-bar">
-            <a href="index.html">Home</a>&nbsp;
-            <a href="about.html">About Us</a>&nbsp;
-            <a href="activity_tracker.html">Activity Tracker</a>&nbsp;
-            <a href="gallery.html">Gallery</a>&nbsp;
-            <a href="carbonFootprintCalculator.html">Carbon Footprint Calculator</a>&nbsp;
-            <a href="Tips and resousrses.html">Tips and Resources</a>&nbsp;
-            <a href="products1.html">Products</a>&nbsp;
-            <a href="shops cart.html">Cart</a>&nbsp;
-            <a href="contact.html">Contact Us</a>
+        <a href="index.html">Home&nbsp;&nbsp;</a>
+        <a href="about.html">About Us&nbsp;&nbsp;</a>
+        <a href="activity_tracker.html">Activity Tracker&nbsp;&nbsp;</a>
+        <a href="gallery.html">Gallery  &nbsp;&nbsp;</a>
+        <a href="carbonFootprintCalculator.html">Carbon Footprint Calculator&nbsp;&nbsp;</a>
+        <a href="products1.html">Products &nbsp;&nbsp;</a>
+        <a href="tips_and_resources.html">Tips and Resources&nbsp;&nbsp;</a>
+        <a href="contact.html">Contact Us&nbsp;</a>
     </nav>
 
     <main class="content">
-        <form class="order-form">
+        <form class="order-form" id="orderForm">
             <p class="form-item">
                 <label for="name">Full Name:</label>
                 <input type="text" name="name" id="name">
@@ -35,27 +35,27 @@
             
             <h2>Select Your Products</h2>
             <p class="form-item">
-                <input type="checkbox" name="item1" id="item1">
+                <input type="checkbox" name="item1" id="item1" value="12.99">
                 <label for="item1">
-                    <img src="soap.jpg" alt="Handmade natural soap" width="100"> Handmade Natural Soap - $12.99
+                    <img src="file:///C:/Users/alishba/Downloads/soap.jpg" alt="Handmade natural soap" width="100"> Handmade Natural Soap - $12.99
                 </label>
             </p>
             <p class="form-item">
-                <input type="checkbox" name="item2" id="item2">
+                <input type="checkbox" name="item2" id="item2" value="29.99">
                 <label for="item2">
-                    <img src="spoons.jpg" alt="Set of wooden utensils" width="100"> Wooden Utensil Set - $29.99
+                    <img src="file:///C:/Users/alishba/Downloads/spoons.jpg" alt="Set of wooden utensils" width="100"> Wooden Utensil Set - $29.99
                 </label>
             </p>
             <p class="form-item">
-                <input type="checkbox" name="item3" id="item3">
+                <input type="checkbox" name="item3" id="item3" value="19.99">
                 <label for="item3">
-                    <img src="bees.jpg" alt="Beeswax food wraps" width="100"> Beeswax Food Wraps - $19.99
+                    <img src="file:///C:/Users/alishba/Downloads/bees.jpg" alt="Beeswax food wraps" width="100"> Beeswax Food Wraps - $19.99
                 </label>
             </p>
             <p class="form-item">
-                <input type="checkbox" name="item4" id="item4">
+                <input type="checkbox" name="item4" id="item4" value="39.99">
                 <label for="item4">
-                    <img src="jars.jpg" alt="Glass storage jars" width="100"> Glass Storage Jars - $39.99
+                    <img src="file:///C:/Users/alishba/Downloads/jars.jpg" alt="Glass storage jars" width="100"> Glass Storage Jars - $39.99
                 </label>
             </p>
 
@@ -72,6 +72,10 @@
             </select>
 
             <p>
+                <span>Total: </span><span id="totalAmount">$0.00</span>
+            </p>
+
+            <p>
                 <input type="submit" value="Submit Order" class="submit-btn">
             </p>
         </form>
@@ -80,5 +84,23 @@
     <footer class="footer">
         <p>&copy; 2025 Ecophilia. All rights reserved.</p>
     </footer>
+
+    <script>
+        document.getElementById('orderForm').addEventListener('change', function() {
+            let total = 0;
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+    
+            for (let i = 0; i < checkboxes.length; i++) {
+                total += parseFloat(checkboxes[i].value);
+            }
+    
+            document.getElementById('totalAmount').textContent = `$${total.toFixed(2)}`;
+        });
+    
+        document.getElementById('orderForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Order submitted! Total: ' + document.getElementById('totalAmount').textContent);
+        });
+    </script>
 </body>
 </html>
